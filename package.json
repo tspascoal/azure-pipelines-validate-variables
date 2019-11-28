@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "package": "npm run clean  && npm run compile  && tfx extension create",
+    "clean": "rimraf ./*.vsix",
+    "compile": "tsc -p .",
+    "install-task-lib": "cd CheckVars && npm install --save-dev"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.7",
+    "tfx-cli": "^0.7.11",
+    "typescript": "^3.7.2"
+  },
+  "name": "variables-validator",
+  "private": true,
+  "version": "0.0.1"
+}

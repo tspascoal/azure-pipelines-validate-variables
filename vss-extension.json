@@ -1,0 +1,57 @@
+{
+  "manifestVersion": 1,
+  "id": "VariablesValidator",
+  "version": "0.9.0",
+  "name": "Variables Validator",
+  "scopes": [],
+  "description": "Validates if required variables declared and not empty",
+  "publisher": "tiago-pascoal",
+  "public": false,
+  "icons": {
+    "default": "static/images/logo.png"
+  },
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "tags": ["Pipelines", "Variables"],
+  "categories": ["Azure Pipelines"],
+  "screenshots": [],
+  "content": {
+    "details": {
+      "path": "overview.md"
+    }
+  },
+  "links": {
+    "getstarted": {
+      "uri": "https://github.com/tspascoal/azure-pipelines-validate-variables"
+    },
+    "issues": {
+      "uri": "https://github.com/tspascoal/azure-pipelines-validate-variables/issues"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "uri": "https://github.com/tspascoal/azure-pipelines-validate-variables"
+  },
+  "branding": {
+    "color": "rgb(220, 235, 252)",
+    "theme": "light"
+  },
+  "files": [
+    {
+      "path": "CheckVars"
+    }
+  ],
+  "contributions": [
+    {
+      "id": "CheckVars",
+      "targets": ["ms.vss-distributed-task.tasks"],
+      "type": "ms.vss-distributed-task.task",
+      "properties": {
+        "name": "CheckVars"
+      }
+    }
+  ]
+}
