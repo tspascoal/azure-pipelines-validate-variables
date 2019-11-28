@@ -6,7 +6,7 @@
   "scopes": [],
   "description": "Validates if required variables declared and not empty",
   "publisher": "tiago-pascoal",
-  "public": false,
+  "public": true,
   "icons": {
     "default": "static/images/logo.png"
   },
